@@ -7,84 +7,74 @@
 
         body{
             font-family: Arial, sans-serif;
-            margin: 0;
+            background:#f2f2f2;
         }
 
         .header{
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .main-content{
-            width: 70%;
-            float: left;
-            background-color: #f2f2f2;
-            padding: 20px;
-            box-sizing: border-box;
+            background:#55b455;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-bottom:20px;
         }
 
         .sidebar{
-            width: 30%;
-            float: left;
-            background-color: #d9edf7;
-            padding: 20px;
-            box-sizing: border-box;
+            float:left;
+            width:15%;
+            background:#dcdcdc;
+            padding:20px;
+            margin-left:20px;
+        }
+
+        .main-content{
+            float:left;
+            width:70%;
+            background:#e8e8e8;
+            padding:20px;
+            margin-left:20px;
         }
 
         .footer{
-            clear: both;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
-        div{
-            border: 1px solid gray;
+            clear:both;
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:300px;
         }
 
     </style>
+
 </head>
 <body>
 
-    <div class="header">
-        <h1>Minha Página Web com Div</h1>
-    </div>
+<div class="header">
+    <h1>Minha Página Web</h1>
+</div>
 
-    <div class="main-content">
+<div class="sidebar">
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</div>
 
-        <h2>Conteúdo Principal</h2>
+<div class="main-content">
 
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
-        </p>
+    <p>
+        Este é o conteúdo principal da página.
+    </p>
 
-        <p>
-            It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged.
-        </p>
+    <p>
+        Adicione mais parágrafos ou elementos conforme necessário.
+    </p>
 
-    </div>
+</div>
 
-    <div class="sidebar">
-
-        <h3>Menu Lateral</h3>
-
-        <ul>
-            <li>Home</li>
-            <li>Quem Somos</li>
-            <li>Contato</li>
-        </ul>
-
-    </div>
-
-    <div class="footer">
-        <p>Rodapé da Página</p>
-    </div>
+<div class="footer">
+    Rodapé da Página
+</div>
 
 </body>
 </html>
