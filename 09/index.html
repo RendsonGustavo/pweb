@@ -25,39 +25,48 @@
 
         #conteudo{
             width:900px;
-            margin-left:auto;
-            margin-right:auto;
+            margin:auto;
             background:white;
             padding:20px;
             margin-top:20px;
         }
 
+        #principal{
+            position:relative;
+            height:500px;
+            border:2px solid #999;
+            background:#f4f4f4;
+        }
+
         .caixa{
             width:200px;
-            height:100px;
-            padding:10px;
+            height:200px;
             color:white;
-            margin:20px;
+            font-size:22px;
+            text-align:center;
+            line-height:200px;
+            font-weight:bold;
         }
 
-        #relativo{
+        #caixa1{
             background:green;
             position:relative;
-            left:30px;
+            top:40px;
+            left:40px;
         }
 
-        #absoluto{
+        #caixa2{
             background:blue;
             position:absolute;
-            top:250px;
-            right:50px;
+            top:120px;
+            left:260px;
         }
 
-        #fixo{
+        #caixa3{
             background:red;
             position:fixed;
-            bottom:10px;
-            right:10px;
+            bottom:20px;
+            right:20px;
         }
 
     </style>
@@ -65,33 +74,37 @@
 </head>
 <body>
 
-<div id="menu">
-    <a href="index.html">Posicionamento</a>
-    <a href="layout.html">Layout Fixo</a>
-</div>
-
-<div id="conteudo">
-
-    <h1>CSS Intermediário - Posicionamento</h1>
-
-    <p>
-        As propriedades de posicionamento do CSS são ferramentas importantes
-        para controlar a disposição dos elementos em uma página web.
-    </p>
-
-    <div class="caixa" id="relativo">
-        Position Relative
+    <div id="menu">
+        <a href="index.html">Posicionamento</a>
+        <a href="layout.html">Layout Fixo</a>
     </div>
 
-    <div class="caixa" id="absoluto">
-        Position Absolute
-    </div>
+    <div id="conteudo">
 
-    <div class="caixa" id="fixo">
-        Position Fixed
-    </div>
+        <h1>CSS Intermediário - Posicionamento</h1>
 
-</div>
+        <p>
+            As propriedades de posicionamento do CSS são ferramentas importantes
+            para controlar a disposição dos elementos em uma página web.
+        </p>
+
+        <div id="principal">
+
+            <div class="caixa" id="caixa1">
+                Relative
+            </div>
+
+            <div class="caixa" id="caixa2">
+                Absolute
+            </div>
+
+            <div class="caixa" id="caixa3">
+                Fixed
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
