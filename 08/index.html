@@ -2,22 +2,15 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Atividade 08 - Prática Box Notícia</title>
+    <title>BOX MODEL</title>
     <style>
-        body {
-            background-color: #d6d6d6;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-
         .container {
-            width: 100%;
+            display: flex;
         }
 
         .noticia {
+            font-family: "opensans-regular", arial, sans-serif;
             background-color: #F5F5DC;
-            font-family: "Open Sans", Arial, sans-serif;
             border: 1px solid black;
             color: #333;
             font-size: 16px;
@@ -36,7 +29,7 @@
         }
 
         .imagem {
-            float: right;
+            float: left;
             width: 200px;
             padding: 10px;
         }
@@ -50,9 +43,19 @@
 
     <div class="container">
         <div class="noticia">
-            <h1>Título da Notícia</h1>
-            <img src="https://via.placeholder.com/200" alt="Imagem" class="imagem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste Velleius interuptus. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Primum in nostrane potestate est, quid meminerimus?</p>
+            <h1>Título da Notícia 01</h1>
+            <img class="imagem" src="https://via.placeholder.com/200" alt="Notícia">
+            <p>
+                The alternative that contains the most appropriate words to respectively fit the gaps in the article excerpt below are: Oscar White Muscarella, a/an respected archeologist at New York’s Metropolitan Museum, claims that more than 1,250 forgeries are on display in the world’s leading museums and art galleries. In his latest book, Muscarella specifically names 37 forgeries in the Louvre, 16 in the British Museum and 45 in his own museum in New York.
+            </p>
+        </div>
+
+        <div class="noticia">
+            <h1>Título da Notícia 02</h1>
+            <img class="imagem" src="https://via.placeholder.com/200" alt="Notícia">
+            <p>
+                The alternative that contains the most appropriate words to respectively fit the gaps in the article excerpt below are: Oscar White Muscarella, a/an respected archeologist at New York’s Metropolitan Museum, claims that more than 1,250 forgeries are on display in the world’s leading museums and art galleries. In his latest book, Muscarella specifically names 37 forgeries in the Louvre, 16 in the British Museum and 45 in his own museum in New York.
+            </p>
         </div>
     </div>
 
