@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atividade 09 - Posicionamento</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background:#d2d2c1;
+            margin:0;
+        }
+
+        #menu{
+            background:#666;
+            padding:15px;
+        }
+
+        #menu a{
+            color:white;
+            text-decoration:none;
+            margin-right:20px;
+            font-weight:bold;
+        }
+
+        #conteudo{
+            width:900px;
+            margin-left:auto;
+            margin-right:auto;
+            background:white;
+            padding:20px;
+            margin-top:20px;
+        }
+
+        .caixa{
+            width:200px;
+            height:100px;
+            padding:10px;
+            color:white;
+            margin:20px;
+        }
+
+        #relativo{
+            background:green;
+            position:relative;
+            left:30px;
+        }
+
+        #absoluto{
+            background:blue;
+            position:absolute;
+            top:250px;
+            right:50px;
+        }
+
+        #fixo{
+            background:red;
+            position:fixed;
+            bottom:10px;
+            right:10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="menu">
+    <a href="index.html">Posicionamento</a>
+    <a href="layout.html">Layout Fixo</a>
+</div>
+
+<div id="conteudo">
+
+    <h1>CSS Intermediário - Posicionamento</h1>
+
+    <p>
+        As propriedades de posicionamento do CSS são ferramentas importantes
+        para controlar a disposição dos elementos em uma página web.
+    </p>
+
+    <div class="caixa" id="relativo">
+        Position Relative
+    </div>
+
+    <div class="caixa" id="absoluto">
+        Position Absolute
+    </div>
+
+    <div class="caixa" id="fixo">
+        Position Fixed
+    </div>
+
+</div>
+
+</body>
+</html>

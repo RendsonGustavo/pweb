@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout Fixo</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial;
+        }
+
+        .header{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:70px;
+            background:#4CAF50;
+            color:white;
+            text-align:center;
+            line-height:70px;
+        }
+
+        .sidebar{
+            position:fixed;
+            top:70px;
+            left:0;
+            width:200px;
+            height:100%;
+            background:#dcdcdc;
+            padding:15px;
+        }
+
+        .conteudo{
+            margin-left:220px;
+            margin-top:90px;
+            padding:20px;
+        }
+
+        .menu a{
+            display:block;
+            margin-bottom:10px;
+            text-decoration:none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="header">
+    Header Fixo
+</div>
+
+<div class="sidebar">
+
+    <div class="menu">
+        <a href="index.html">Posicionamento</a>
+        <a href="layout.html">Layout Fixo</a>
+    </div>
+
+</div>
+
+<div class="conteudo">
+
+    <h2>Conteúdo Principal</h2>
+
+    <p>
+        Este exemplo demonstra um cabeçalho fixo e uma barra lateral fixa,
+        conforme o desafio opcional apresentado no slide.
+    </p>
+
+    <p>
+        Ao rolar a página, o cabeçalho e a sidebar permanecem visíveis.
+    </p>
+
+</div>
+
+</body>
+</html>
