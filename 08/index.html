@@ -1,73 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>BOX MODEL</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f0f0;
-        }
+<title>Box de Notícias</title>
 
-        .container {
-            display: flex;
-        }
+<style>
 
-        .noticia {
-            font-family: "opensans-regular", arial, sans-serif;
-            background-color: #F5F5DC;
-            border: 1px solid black;
-            color: #333;
-            font-size: 16px;
-            padding-left: 15px;
-            padding-right: 10px;
-            text-align: justify;
-            line-height: 24px;
-            width: 500px;
-            margin: 20px;
-        }
+body{
+    background:#d2d2c1;
+    font-family:Arial;
+}
 
-        .noticia h1 {
-            color: #c4170c;
-            font-family: "Helvetica Neue", Arial, sans-serif;
-            margin: 8px;
-        }
+#menu{
+    background:#666;
+    padding:10px;
+}
 
-        .imagem {
-            float: left;
-            width: 200px;
-            padding: 10px;
-        }
+#menu a{
+    color:white;
+    text-decoration:none;
+    margin-right:15px;
+}
 
-        .noticia p {
-            clear: both;
-        }
+.container{
+    width:1100px;
+}
 
-        .menu-link {
-            display: inline-block;
-            margin: 20px;
-            padding: 10px 20px;
-            background-color: #003366;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-        }
+.noticia{
+    background:white;
+    width:500px;
+    padding-left:15px;
+    padding-right:10px;
+    margin:20px;
+    float:left;
+    text-align:justify;
+    line-height:24px;
+    border:1px solid #ccc;
+}
 
-        .menu-link:hover {
-            background-color: #002244;
-        }
-    </style>
+.noticia h1{
+    margin:8px;
+}
+
+.imagem{
+    width:450px;
+    padding:10px;
+}
+
+</style>
+
 </head>
 <body>
 
-    <a href="galeria.html" class="menu-link">Ir para Galeria de Imagens</a>
+<div id="menu">
+    <a href="index.html">Box de Notícias</a>
+    <a href="desafio.html">Galeria de Fotos</a>
+</div>
 
-    <div class="container">
-        <div class="noticia">
-            <h1>Título da Notícia 01</h1>
-            <img class="imagem" src="https://picsum.photos/200" alt="Notícia 1">
-            <p>
-                The alternative that contains the most appropriate words to respectively fit the gaps in the article excerpt below are: Oscar White Muscarella, a/an respected archeologist at New
+<div class="container">
+
+    <div class="noticia">
+
+        <h1>Tecnologia</h1>
+
+        <img
+        class="imagem"
+        src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800"
+        alt="Tecnologia">
+
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s.
+        </p>
+
+    </div>
+
+    <div class="noticia">
+
+        <h1>Inovação</h1>
+
+        <img
+        class="imagem"
+        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+        alt="Inovação">
+
+        <p>
+        It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
