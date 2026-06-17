@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>BOX MODEL</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
         .container {
             display: flex;
         }
@@ -37,27 +44,30 @@
         .noticia p {
             clear: both;
         }
+
+        .menu-link {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .menu-link:hover {
+            background-color: #002244;
+        }
     </style>
 </head>
 <body>
 
+    <a href="galeria.html" class="menu-link">Ir para Galeria de Imagens</a>
+
     <div class="container">
         <div class="noticia">
             <h1>Título da Notícia 01</h1>
-            <img class="imagem" src="https://via.placeholder.com/200" alt="Notícia">
+            <img class="imagem" src="https://picsum.photos/200" alt="Notícia 1">
             <p>
-                The alternative that contains the most appropriate words to respectively fit the gaps in the article excerpt below are: Oscar White Muscarella, a/an respected archeologist at New York’s Metropolitan Museum, claims that more than 1,250 forgeries are on display in the world’s leading museums and art galleries. In his latest book, Muscarella specifically names 37 forgeries in the Louvre, 16 in the British Museum and 45 in his own museum in New York.
-            </p>
-        </div>
-
-        <div class="noticia">
-            <h1>Título da Notícia 02</h1>
-            <img class="imagem" src="https://via.placeholder.com/200" alt="Notícia">
-            <p>
-                The alternative that contains the most appropriate words to respectively fit the gaps in the article excerpt below are: Oscar White Muscarella, a/an respected archeologist at New York’s Metropolitan Museum, claims that more than 1,250 forgeries are on display in the world’s leading museums and art galleries. In his latest book, Muscarella specifically names 37 forgeries in the Louvre, 16 in the British Museum and 45 in his own museum in New York.
-            </p>
-        </div>
-    </div>
-
-</body>
-</html>
+                The alternative that contains the most appropriate words to respectively fit the gaps in the article excerpt below are: Oscar White Muscarella, a/an respected archeologist at New
