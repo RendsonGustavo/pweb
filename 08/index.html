@@ -1,97 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Box de Notícias</title>
+    <title>Box de Notícias</title>
 
-<style>
+    <style>
 
-body{
-    background:#d2d2c1;
-    font-family:Arial;
-}
+        body{
+            background:#d2d2c1;
+            font-family:Arial, Helvetica, sans-serif;
+            margin:0;
+        }
 
-#menu{
-    background:#666;
-    padding:10px;
-}
+        #menu{
+            background:#666;
+            padding:15px;
+        }
 
-#menu a{
-    color:white;
-    text-decoration:none;
-    margin-right:15px;
-}
+        #menu a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            margin-right:20px;
+        }
 
-.container{
-    width:1100px;
-}
+        .container{
+            width:1150px;
+            margin:auto;
+        }
 
-.noticia{
-    background:white;
-    width:500px;
-    padding-left:15px;
-    padding-right:10px;
-    margin:20px;
-    float:left;
-    text-align:justify;
-    line-height:24px;
-    border:1px solid #ccc;
-}
+        .noticia{
+            background:#f4f4ec;
+            width:500px;
+            float:left;
+            margin:20px;
+            border:1px solid #b4b4b4;
+            text-align:justify;
+            line-height:24px;
+            padding-left:15px;
+            padding-right:10px;
+            box-sizing:border-box;
+        }
 
-.noticia h1{
-    margin:8px;
-}
+        .noticia h1{
+            margin:8px;
+            color:#666;
+        }
 
-.imagem{
-    width:450px;
-    padding:10px;
-}
+        .imagem{
+            width:450px;
+            padding:10px;
+            display:block;
+            margin:auto;
+        }
 
-</style>
+        .rodape{
+            clear:both;
+            background:#666;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+
+    </style>
 
 </head>
 <body>
 
-<div id="menu">
-    <a href="index.html">Box de Notícias</a>
-    <a href="desafio.html">Galeria de Fotos</a>
-</div>
+    <div id="menu">
+        <a href="index.html">Box de Notícias</a>
+        <a href="desafio.html">Galeria de Fotos</a>
+    </div>
 
-<div class="container">
+    <div class="container">
 
-    <div class="noticia">
+        <div class="noticia">
 
-        <h1>Tecnologia</h1>
+            <h1>Tecnologia</h1>
 
-        <img
-        class="imagem"
-        src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800"
-        alt="Tecnologia">
+            <img
+            class="imagem"
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800"
+            alt="Tecnologia">
 
-        <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text
-        ever since the 1500s.
-        </p>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s.
+            </p>
+
+        </div>
+
+        <div class="noticia">
+
+            <h1>Inovação</h1>
+
+            <img
+            class="imagem"
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+            alt="Inovação">
+
+            <p>
+                It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+            </p>
+
+        </div>
 
     </div>
 
-    <div class="noticia">
-
-        <h1>Inovação</h1>
-
-        <img
-        class="imagem"
-        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
-        alt="Inovação">
-
-        <p>
-        It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged.
-        </p>
-
+    <div class="rodape">
+        Copyright © Todos os direitos reservados
     </div>
-
-</div>
 
 </body>
 </html>
