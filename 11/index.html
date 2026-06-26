@@ -6,15 +6,31 @@
 
 <style>
 
-body{
+*{
     margin:0;
-    background:#d2d2c1;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     font-family:Arial, Helvetica, sans-serif;
+    background:#d2d2c1;
+}
+
+header{
+    background:#666;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    margin-bottom:10px;
 }
 
 nav{
-    background:#666;
-    padding:15px;
+    background:#555;
+    padding:10px;
 }
 
 nav a{
@@ -25,8 +41,7 @@ nav a{
 }
 
 nav a:hover{
-    background:#999;
-    padding:5px;
+    color:yellow;
 }
 
 #principal{
@@ -35,40 +50,36 @@ nav a:hover{
 }
 
 section{
-    width:75%;
+    width:70%;
     float:left;
-}
-
-aside{
-    width:20%;
-    float:right;
-    background:#f4f4f4;
-    border:1px solid #999;
-    padding:10px;
-    box-sizing:border-box;
 }
 
 article{
     background:white;
+    border:1px solid #999;
     margin-bottom:20px;
     padding:15px;
-    border:1px solid #999;
     overflow:hidden;
+}
+
+article header{
+    background:white;
+    color:black;
+    text-align:left;
+    padding:0;
+    margin-bottom:10px;
 }
 
 article img{
     width:220px;
+    height:150px;
     float:left;
     margin-right:15px;
 }
 
-article h2{
-    margin-top:0;
-    color:#444;
-}
-
-.autor{
-    font-weight:bold;
+article p{
+    text-align:justify;
+    line-height:22px;
 }
 
 time{
@@ -76,35 +87,64 @@ time{
     font-size:14px;
 }
 
-.banner{
-    background:#ddd;
-    margin-bottom:15px;
-    padding:20px;
-    text-align:center;
+article footer{
+    background:white;
+    color:#444;
+    text-align:left;
+    margin-top:15px;
+    padding:0;
     font-weight:bold;
-    border:1px solid #aaa;
 }
 
-footer{
+aside{
+    width:25%;
+    float:right;
+}
+
+.banner{
+    background:white;
+    border:1px solid #999;
+    padding:15px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.banner img{
+    width:100%;
+}
+
+#rodape{
     clear:both;
     background:#666;
     color:white;
     text-align:center;
     padding:15px;
-    margin-top:20px;
 }
 
 </style>
 
 </head>
+
 <body>
 
+<header>
+
+<h1>Portal de Notícias</h1>
+
+<p>As principais notícias do dia</p>
+
+</header>
+
 <nav>
-    <a href="#">Início</a>
-    <a href="#">Tecnologia</a>
-    <a href="#">Esportes</a>
-    <a href="#">Economia</a>
-    <a href="#">Contato</a>
+
+<a href="#">Carros</a>
+
+<a href="#">Ciência</a>
+
+<a href="#">Economia</a>
+
+<a href="#">Educação</a>
+
 </nav>
 
 <div id="principal">
@@ -113,65 +153,119 @@ footer{
 
 <article>
 
-<h2>Nova tecnologia facilita a vida das pessoas</h2>
+<header>
 
-<img src="https://picsum.photos/300/200?random=11">
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam.
-</p>
-
-<p class="autor">
-Autor: Rendson Gustavo
-</p>
+<h2>Nova tecnologia chega ao mercado</h2>
 
 <time datetime="2026-06-20">
-20/06/2026
+Publicado em 20/06/2026
 </time>
+
+</header>
+
+<img src="https://picsum.photos/300/200?random=1">
+
+<p>
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the
+1500s, when an unknown printer took a galley of type and scrambled it to
+make a type specimen book.
+
+</p>
+
+<footer>
+
+Autor: Rendson Gustavo
+
+</footer>
 
 </article>
 
 <article>
 
-<h2>Educação cresce com recursos digitais</h2>
+<header>
 
-<img src="https://picsum.photos/300/200?random=12">
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Duis aute irure dolor in reprehenderit in voluptate velit esse.
-</p>
-
-<p class="autor">
-Autor: Rendson Gustavo
-</p>
+<h2>Educação cresce com tecnologia</h2>
 
 <time datetime="2026-06-18">
-18/06/2026
+Publicado em 18/06/2026
 </time>
+
+</header>
+
+<img src="https://picsum.photos/300/200?random=2">
+
+<p>
+
+It has survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged.
+
+</p>
+
+<footer>
+
+Autor: Rendson Gustavo
+
+</footer>
 
 </article>
 
 <article>
 
-<h2>Pesquisa aponta crescimento da economia</h2>
+<header>
 
-<img src="https://picsum.photos/300/200?random=13">
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Excepteur sint occaecat cupidatat non proident.
-</p>
-
-<p class="autor">
-Autor: Rendson Gustavo
-</p>
+<h2>Economia apresenta crescimento</h2>
 
 <time datetime="2026-06-15">
-15/06/2026
+Publicado em 15/06/2026
 </time>
+
+</header>
+
+<img src="https://picsum.photos/300/200?random=3">
+
+<p>
+
+More recently, desktop publishing software like Aldus PageMaker included
+versions of Lorem Ipsum.
+
+</p>
+
+<footer>
+
+Autor: Rendson Gustavo
+
+</footer>
+
+</article>
+
+<article>
+
+<header>
+
+<h2>Ciência faz nova descoberta</h2>
+
+<time datetime="2026-06-12">
+Publicado em 12/06/2026
+</time>
+
+</header>
+
+<img src="https://picsum.photos/300/200?random=4">
+
+<p>
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+
+</p>
+
+<footer>
+
+Autor: Rendson Gustavo
+
+</footer>
 
 </article>
 
@@ -180,26 +274,38 @@ Autor: Rendson Gustavo
 <aside>
 
 <div class="banner">
-Publicidade 1
+
+<h3>Publicidade</h3>
+
+<img src="https://picsum.photos/250/200?random=5">
+
 </div>
 
 <div class="banner">
-Publicidade 2
+
+<h3>Publicidade</h3>
+
+<img src="https://picsum.photos/250/200?random=6">
+
 </div>
 
 <div class="banner">
-Publicidade 3
+
+<h3>Publicidade</h3>
+
+<img src="https://picsum.photos/250/200?random=7">
+
 </div>
 
 </aside>
 
 </div>
 
-<footer>
+<div id="rodape">
 
-Portal de Notícias - Todos os direitos reservados © 2026
+Portal de Notícias © 2026 - Todos os direitos reservados.
 
-</footer>
+</div>
 
 </body>
 </html>
